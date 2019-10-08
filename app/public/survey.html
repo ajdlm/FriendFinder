@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Friend Finder</title>
+
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="../../server.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h2 class="mt-3">Survey Questions</h2>
+
+        <hr />
+
+        <h4><strong>About You</strong></h4>
+
+        <h5 class="mt-3">Name (Required)</h5>
+
+        <input type="text" id="name" class="form-control" required>
+
+        <h5 class="mt-2">Profile Photo Link (Required)</h5>
+
+        <input type="text" id="profilePhoto" class="form-control" required>
+
+        <hr>
+
+        <h4><strong>Question 1</strong></h4>
+
+        <h5>You enjoy spending lots of time in the company of large groups of people.</h5>
+
+        <select id="question-1">
+            <option selected disabled hidden>Select an Option</option>
+
+            <option value="1">1 (Strongly Disagree)</option>
+
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+
+            <option value="4">4</option>
+
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h4 class="mt-3"><strong>Question 2</strong></h4>
+
+        <h5>You believe that it's always best to speak as bluntly as possible, even if someone might get hurt.</h5>
+
+        <select id="question-2">
+            <option selected disabled hidden>Select an Option</option>
+
+            <option value="1">1 (Strongly Disagree)</option>
+
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+
+            <option value="4">4</option>
+
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h4 class="mt-3"><strong>Question 3</strong></h4>
+
+        <h5>You enjoy spending lots of time outdoors, doing activities such as hiking or cycling.</h5>
+
+        <select id="question-3">
+            <option selected disabled hidden>Select an Option</option>
+
+            <option value="1">1 (Strongly Disagree)</option>
+
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+
+            <option value="4">4</option>
+
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h4 class="mt-3"><strong>Question 4</strong></h4>
+
+        <h5>You are ambitious and goal-oriented and prefer to avoid activities that you view as wastes of time.</h5>
+
+        <select id="question-4">
+            <option selected disabled hidden>Select an Option</option>
+
+            <option value="1">1 (Strongly Disagree)</option>
+
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+
+            <option value="4">4</option>
+
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h4 class="mt-3"><strong>Question 5</strong></h4>
+
+        <h5>You are disappointed when a friend cancels plans with you.</h5>
+
+        <select id="question-5">
+            <option selected disabled hidden>Select an Option</option>
+
+            <option value="1">1 (Strongly Disagree)</option>
+
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+
+            <option value="4">4</option>
+
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h4 class="mt-3"><strong>Question 5</strong></h4>
+
+        <h5>You are disappointed when a friend cancels plans with you.</h5>
+
+        <select id="question-5">
+            <option selected disabled hidden>Select an Option</option>
+
+            <option value="1">1 (Strongly Disagree)</option>
+
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+
+            <option value="4">4</option>
+
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h4 class="mt-3"><strong>Question 6</strong></h4>
+
+        <h5>You consider yourself to be a geek.</h5>
+
+        <select id="question-6">
+            <option selected disabled hidden>Select an Option</option>
+
+            <option value="1">1 (Strongly Disagree)</option>
+
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+
+            <option value="4">4</option>
+
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h4 class="mt-3"><strong>Question 7</strong></h4>
+
+        <h5>You have a strong sense of adventure and like activities that break up the routine of your day-to-day life.
+        </h5>
+
+        <select id="question-7">
+            <option selected disabled hidden>Select an Option</option>
+
+            <option value="1">1 (Strongly Disagree)</option>
+
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+
+            <option value="4">4</option>
+
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h4 class="mt-3"><strong>Question 8</strong></h4>
+
+        <h5>You enjoy a good debate and don't really mind when you and a friend disagree on something important.</h5>
+
+        <select id="question-8">
+            <option selected disabled hidden>Select an Option</option>
+
+            <option value="1">1 (Strongly Disagree)</option>
+
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+
+            <option value="4">4</option>
+
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h4 class="mt-3"><strong>Question 9</strong></h4>
+
+        <h5>You value diversity and enjoy meeting people with backgrounds different from your own.</h5>
+
+        <select id="question-9">
+            <option selected disabled hidden>Select an Option</option>
+
+            <option value="1">1 (Strongly Disagree)</option>
+
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+
+            <option value="4">4</option>
+
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h4 class="mt-3"><strong>Question 10</strong></h4>
+
+        <h5>You consider yourself easygoing and have no problem going with the flow of whatever is happening around you.
+        </h5>
+
+        <select id="question-10">
+            <option selected disabled hidden>Select an Option</option>
+
+            <option value="1">1 (Strongly Disagree)</option>
+
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+
+            <option value="4">4</option>
+
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <button type="submit" class="btn text-white btn-lg btn-block mt-3" id="submitSurvey" style="background: #337ab7; font-size: 18px;"><i
+                class="fas fa-check-circle"></i> Submit</button>
+
+        <hr />
+
+        <p style="font-size: 14px;"><a href="/api/friends" class="border-right border-dark pr-2">API
+                Friends List</a><a href="https://github.com/ajdlm/FriendFinder" class="pl-2">GitHub Repository</a>
+        </p>
+    </div>
+</body>

@@ -1,12 +1,11 @@
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/home.html"));
-});
+var path = require("path");
 
-app.get("/survey", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/survey.html"));
-});
+module.exports = {
+    getHome: function (req, res) {
+        res.sendFile(path.join(__dirname, "../public/home.html"));
+    },
 
-// Redirects anything else to the route that displays home.html.
-app.get("*",function (req, res) {
-    res.redirect("/");
-});
+    getSurvey: function (req, res) {
+        res.sendFile(path.join(__dirname, "../public/survey.html"));
+    }
+};

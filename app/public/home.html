@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Friend Finder</title>
+
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="../../server.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron px-5 mb-4">
+            <h1 style="font-size: 63px;"><i class="fas fa-user-friends"></i> Friend Finder</h1>
+
+            <hr />
+
+            <h2 style="line-height: 1.5;">Answer some questions...</h2>
+
+            <h2 style="line-height: 1.5;">...then find the person who'd best match you as a friend!</h2>
+
+            <br />
+
+            <div>
+                <button class="text-white p-3" style="font-size: 18px; background: #337ab7; border-radius: 6px;"
+                    onclick="location.href='/survey'"><i class='fas fa-envelope-open-text'></i> Go to Survey</button>
+            </div>
+        </div>
+
+        <p class="pt-1" style="font-size: 14px;"><a href="/api/friends" class="border-right border-dark pr-2">API
+                Friends List</a><a href="https://github.com/ajdlm/FriendFinder" class="pl-2">GitHub Repository</a>
+        </p>
+    </div>
+</body>
