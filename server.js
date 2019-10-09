@@ -12,7 +12,6 @@ app.use(express.json());
 app.get("/api/friends", apiRoutes.getFriends);
 app.post("/api/friends", apiRoutes.postFriend);
 
-app.get("/", htmlRoutes.getHome);
 app.get("/survey", htmlRoutes.getSurvey);
 app.get("*", htmlRoutes.getHome);
 
