@@ -21,7 +21,7 @@ module.exports = [
     },
     {
         name: "Lola the Cat",
-        photo: "../../assets/images/lola.jpg",
+        photo: "lola.jpg",
         scores: [4, 5, 5, 2, 5, 5, 4, 5, 3, 2]
     },
     {
