@@ -13,19 +13,13 @@
 
     <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <script src="../../server.js"></script>
 </head>
 
 <body>
-
-
     <div class="container">
         <h2 class="mt-3">Survey Questions</h2>
 
@@ -34,6 +28,7 @@
         <h4><strong>About You</strong></h4>
 
         <h5 class="mt-3">Name (Required)</h5>
+
 
         <input type="text" id="name" class="form-control" required>
 
@@ -48,7 +43,7 @@
         <h5>You enjoy spending lots of time in the company of large groups of people.</h5>
 
         <select id="question-1">
-            <option selected disabled hidden>Select an Option</option>
+            <option value="" selected disabled hidden>Select an Option</option>
 
             <option value="1">1 (Strongly Disagree)</option>
 
@@ -66,7 +61,7 @@
         <h5>You believe that it's always best to speak as bluntly as possible, even if someone might get hurt.</h5>
 
         <select id="question-2">
-            <option selected disabled hidden>Select an Option</option>
+            <option value="" selected disabled hidden>Select an Option</option>
 
             <option value="1">1 (Strongly Disagree)</option>
 
@@ -84,7 +79,7 @@
         <h5>You enjoy spending lots of time outdoors, doing activities such as hiking or cycling.</h5>
 
         <select id="question-3">
-            <option selected disabled hidden>Select an Option</option>
+            <option value="" selected disabled hidden>Select an Option</option>
 
             <option value="1">1 (Strongly Disagree)</option>
 
@@ -102,7 +97,7 @@
         <h5>You are ambitious and goal-oriented and prefer to avoid activities that you view as wastes of time.</h5>
 
         <select id="question-4">
-            <option selected disabled hidden>Select an Option</option>
+            <option value="" selected disabled hidden>Select an Option</option>
 
             <option value="1">1 (Strongly Disagree)</option>
 
@@ -120,25 +115,7 @@
         <h5>You are disappointed when a friend cancels plans with you.</h5>
 
         <select id="question-5">
-            <option selected disabled hidden>Select an Option</option>
-
-            <option value="1">1 (Strongly Disagree)</option>
-
-            <option value="2">2</option>
-
-            <option value="3">3</option>
-
-            <option value="4">4</option>
-
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h4 class="mt-3"><strong>Question 5</strong></h4>
-
-        <h5>You are disappointed when a friend cancels plans with you.</h5>
-
-        <select id="question-5">
-            <option selected disabled hidden>Select an Option</option>
+            <option value="" selected disabled hidden>Select an Option</option>
 
             <option value="1">1 (Strongly Disagree)</option>
 
@@ -156,7 +133,7 @@
         <h5>You consider yourself to be a geek.</h5>
 
         <select id="question-6">
-            <option selected disabled hidden>Select an Option</option>
+            <option value="" selected disabled hidden>Select an Option</option>
 
             <option value="1">1 (Strongly Disagree)</option>
 
@@ -171,11 +148,12 @@
 
         <h4 class="mt-3"><strong>Question 7</strong></h4>
 
-        <h5>You have a strong sense of adventure and like activities that break up the routine of your day-to-day life.
+        <h5>You have a strong sense of adventure and like activities that break up the routine of your day-to-day
+            life.
         </h5>
 
         <select id="question-7">
-            <option selected disabled hidden>Select an Option</option>
+            <option value="" selected disabled hidden>Select an Option</option>
 
             <option value="1">1 (Strongly Disagree)</option>
 
@@ -190,10 +168,11 @@
 
         <h4 class="mt-3"><strong>Question 8</strong></h4>
 
-        <h5>You enjoy a good debate and don't really mind when you and a friend disagree on something important.</h5>
+        <h5>You enjoy a good debate and don't really mind when you and a friend disagree on something important.
+        </h5>
 
         <select id="question-8">
-            <option selected disabled hidden>Select an Option</option>
+            <option value="" selected disabled hidden>Select an Option</option>
 
             <option value="1">1 (Strongly Disagree)</option>
 
@@ -211,7 +190,7 @@
         <h5>You value diversity and enjoy meeting people with backgrounds different from your own.</h5>
 
         <select id="question-9">
-            <option selected disabled hidden>Select an Option</option>
+            <option value="" selected disabled hidden>Select an Option</option>
 
             <option value="1">1 (Strongly Disagree)</option>
 
@@ -226,11 +205,12 @@
 
         <h4 class="mt-3"><strong>Question 10</strong></h4>
 
-        <h5>You consider yourself easygoing and have no problem going with the flow of whatever is happening around you.
+        <h5>You consider yourself easygoing and have no problem going with the flow of whatever is happening around
+            you.
         </h5>
 
         <select id="question-10">
-            <option selected disabled hidden>Select an Option</option>
+            <option value="" selected disabled hidden>Select an Option</option>
 
             <option value="1">1 (Strongly Disagree)</option>
 
@@ -243,8 +223,8 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
 
-        <button type="submit" class="btn text-white btn-lg btn-block mt-3" id="submitSurvey" style="background: #337ab7; font-size: 18px;"><i
-                class="fas fa-check-circle"></i> Submit</button>
+        <button type="submit" class="btn text-white btn-lg btn-block mt-3" id="submitSurvey"
+            style="background: #337ab7; font-size: 18px;"><i class="fas fa-check-circle"></i> Submit</button>
 
         <hr />
 
@@ -252,4 +232,102 @@
                 Friends List</a><a href="https://github.com/ajdlm/FriendFinder" class="pl-2">GitHub Repository</a>
         </p>
     </div>
+
+    <div class="modal" id="noResults" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">No Results</h2>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">We're sorry, but there aren't yet any other users in FriendFinder's database.
+                    Check back in the future to find to find your match.</div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn text-white" data-dismiss="modal" style="background: #337ab7; font-size: 18px;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="matchModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Best Match</h2>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <h2 id="friendName"></h2>
+                    <img id="friendImage" alt="no image available" style="max-width: 80%;" />
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn text-white" data-dismiss="modal" style="background: #337ab7; font-size: 18px;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function validateAnswers() {
+            var formIsFinished = true;
+
+            $("input, option:checked").each(function () {
+                if ($(this).val() === "") {
+                    formIsFinished = false;
+                }
+            });
+
+            return formIsFinished;
+        };
+
+        $("#submitSurvey").on("click", function (event) {
+            event.preventDefault();
+
+            if (validateAnswers()) {
+                var surveyResults = {
+                    name: $("#name").val().trim(),
+                    photo: $("#profilePhoto").val().trim(),
+                    scores: [
+                        $("#question-1").val(),
+                        $("#question-2").val(),
+                        $("#question-3").val(),
+                        $("#question-4").val(),
+                        $("#question-5").val(),
+                        $("#question-6").val(),
+                        $("#question-7").val(),
+                        $("#question-8").val(),
+                        $("#question-9").val(),
+                        $("#question-10").val()
+                    ]
+                };
+
+                $.post("/api/friends", surveyResults, function (data) {
+                    if (!data) {
+                        $("#noResults").modal("show");
+                    }
+
+                    else {
+                        console.log(data);
+                        $("#friendName").text(data.name);
+
+                        $("#friendImage").attr("src", data.photo);
+
+                        $("#matchModal").modal("show");
+                    };
+                });
+            }
+
+            else {
+                alert("Please complete the entire survey before submitting.");
+            };
+        });
+    </script>
 </body>
