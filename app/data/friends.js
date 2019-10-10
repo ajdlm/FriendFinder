@@ -6,17 +6,17 @@ module.exports = [
     },
     {
         name: "Fabio",
-        photo: "fabio.jpeg",
+        photo: "fabio.jpg",
         scores: [4, 2, 1, 3, 4, 2, 1, 3, 1, 4]
     },
     {
         name: "Elizabeth II",
-        photo: "elizabeth.jpeg",
+        photo: "elizabeth.jpg",
         scores: [5, 1, 2, 4, 3, 3, 3, 4, 2, 1]
     },
     {
         name: "Jeff Goldblum",
-        photo: "jeff-goldblum.jpeg",
+        photo: "jeff-goldblum.jpg",
         scores: [3, 2, 1, 5, 2, 1, 2, 1, 4, 5]
     },
     {
@@ -26,7 +26,7 @@ module.exports = [
     },
     {
         name: "Ron Burgundy",
-        photo: "ron-burgundy.jpeg",
+        photo: "ron-burgundy.png",
         scores: [1, 3, 4, 3, 1, 3, 2, 4, 2, 3]
     }
 ];
