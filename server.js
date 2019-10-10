@@ -6,6 +6,8 @@ var PORT = process.env.PORT || 8080;
 var apiRoutes = require("./app/routing/apiRoutes.js");
 var htmlRoutes = require("./app/routing/htmlRoutes.js");
 
+app.use(express.static("assets/images"));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

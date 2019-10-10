@@ -1,22 +1,22 @@
 module.exports = [
     {
         name: "Darth Vader",
-        photo: "../../assets/images/darth-vader.jpeg",
+        photo: "darth-vader.jpeg",
         scores: [2, 4, 3, 5, 2, 4, 3, 2, 1, 2]
     },
     {
         name: "Fabio",
-        photo: "../../assets/images/fabio.jpeg",
+        photo: "fabio.jpeg",
         scores: [4, 2, 1, 3, 4, 2, 1, 3, 1, 4]
     },
     {
         name: "Elizabeth II",
-        photo: "../../assets/images/elizabeth.jpeg",
+        photo: "elizabeth.jpeg",
         scores: [5, 1, 2, 4, 3, 3, 3, 4, 2, 1]
     },
     {
         name: "Jeff Goldblum",
-        photo: "../../assets/images/jeff-goldblum.jpeg",
+        photo: "jeff-goldblum.jpeg",
         scores: [3, 2, 1, 5, 2, 1, 2, 1, 4, 5]
     },
     {
@@ -26,7 +26,7 @@ module.exports = [
     },
     {
         name: "Ron Burgundy",
-        photo: "../../assets/images/ron-burgundy.jpeg",
+        photo: "ron-burgundy.jpeg",
         scores: [1, 3, 4, 3, 1, 3, 2, 4, 2, 3]
     }
 ];
