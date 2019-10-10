@@ -35,16 +35,8 @@ module.exports = {
             };
         };
 
-        // If there were no possible matches, return false.
-        if (isNaN(bestMatch.totalDifference)) {
-            console.log(bestMatch.details);
-            res.json(false);
-        }
-
-        // Otherwise, respond with the JSON data for the best possible match.
-        else {
+        // Respond with the JSON data for the best possible match.
             console.log(bestMatch.details);
             res.json(bestMatch.details);
-        };
     }
 };

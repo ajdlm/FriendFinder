@@ -233,26 +233,6 @@
         </p>
     </div>
 
-    <div class="modal" id="noResults" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title">No Results</h2>
-
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                </div>
-
-                <div class="modal-body">We're sorry, but there aren't yet any other users in FriendFinder's database.
-                    Check back in the future to find to find your match.</div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn text-white" data-dismiss="modal" style="background: #337ab7; font-size: 18px;">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="modal" id="matchModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -269,7 +249,8 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn text-white" data-dismiss="modal" style="background: #337ab7; font-size: 18px;">Close</button>
+                    <button type="button" class="btn text-white" data-dismiss="modal"
+                        style="background: #337ab7; font-size: 18px;">Close</button>
                 </div>
             </div>
         </div>
@@ -310,18 +291,11 @@
                 };
 
                 $.post("/api/friends", surveyResults, function (data) {
-                    if (!data) {
-                        $("#noResults").modal("show");
-                    }
+                    $("#friendName").text(data.name);
 
-                    else {
-                        console.log(data);
-                        $("#friendName").text(data.name);
+                    $("#friendImage").attr("src", data.photo);
 
-                        $("#friendImage").attr("src", data.photo);
-
-                        $("#matchModal").modal("show");
-                    };
+                    $("#matchModal").modal("show");
                 });
             }
 
